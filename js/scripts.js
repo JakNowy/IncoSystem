@@ -1,12 +1,15 @@
 var i = 1;
 var text = ['Mature solutions', 'Young team', 'Passionate engineers', 'Dedicated service'];
 
-setInterval(swap, 3000);
+setInterval(swap, 3000);// TODO:
+//  1. Podkreślenie nawiacji
+//  2. Navbar dokowany
+//  3. Guzik (pojedyncza, mała strzałka na samym dole)
 
 function swap (){
-    // $('#swapper').fadeOut(2000, swap);
-    setTimeout(swap_text(),2000);
-    // $('#swapper').fadeIn(2000);
+    // $('#swapper').fadeOut(1500, swap);
+    setTimeout(swap_text(),3000);
+    // $('#swapper').fadeIn(1500);
 }
 
 function swap_text() {
