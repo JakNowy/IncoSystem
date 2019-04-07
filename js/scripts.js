@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-    console.log(5);
 
     function swap(text,i) {
         document.getElementById('swapper').innerHTML=(text[i])
@@ -18,7 +17,7 @@ $(document).ready(function () {
         if (i==text.length){i=0}
         $('#swapper').fadeIn(swapTime-correct).fadeOut(swapTime-correct, swap(text, i));
         }
-    ,(swapTime-correct)*2);
+    ,(swapTime-correct+4)*2);
 
 
 
@@ -63,12 +62,12 @@ $(document).ready(function () {
 // DOCKING NAVBAR
     $(window).scroll(function() {
     var scroll = $(window).scrollTop();
+    var popup_height = $('#s2').offset().top;
 
-     //>=, not <=
-    if (scroll >= 30) {
+    if (scroll >= popup_height) {
         $("#navbar").removeClass('white').addClass("docked");
     }
-    if (scroll < 30) {
+    if (scroll < popup_height) {
         $("#navbar").removeClass("docked").addClass('white');
     }
     });
@@ -90,7 +89,6 @@ $(document).ready(function () {
         // SECTION 1
        if ($(document).scrollTop() > $('#s1').offset().top){
            $('nav #s1').addClass('nav-active')
-            console.log(5)
        }
        if ($(document).scrollTop() < $('#s1').offset().top){
            $('nav #s1').removeClass('nav-active')
@@ -112,14 +110,13 @@ $(document).ready(function () {
            $('nav #s3').removeClass('nav-active')
        }
 
-        // SECTION 4
-      if ($(document).scrollTop() > $('#s4').offset().top){
-           $('nav #s4').addClass('nav-active')
-       }
-       if ($(document).scrollTop() < $('#s4').offset().top){
-           $('nav #s4').removeClass('nav-active')
-       }
+      //   // SECTION 4
+      // if ($(document).scrollTop() > $('#s4').offset().top){
+      //      $('nav #s4').addClass('nav-active')
+      //  }
+      //  if ($(document).scrollTop() < $('#s4').offset().top){
+      //      $('nav #s4').removeClass('nav-active')
+      //  }
     });
-
 
 });
