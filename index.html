@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Inco System</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"-->
+<!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
 
 </head>
 
@@ -22,28 +21,53 @@
 
 
     <section id="s1" class="box-img">
-        <div id="navbar" class="navbar white">
-                <nav href="#s1"> Strona Główna</nav>
-                <nav href="#s2"> Zakres Działalności</nav>
-                <nav href="#s3"> Referencje</nav>
-                <nav href="#s4"> Kontakt</nav>
-        </div>
+        <nav id="navbar">
+            <div id="burger">
+                <div id="burger-icon">&#9776;</div>
+            </div>
+            <br>
+            <ul id="menu">
+                <img src="img/BM.png" alt="LOGO">
+                <li><a href="#s1"> Strona Główna </a></li>
+                <li><a href="#s2"> Zakres Działalności </a></li>
+                <li><a href="#s3"> Realizacje </a></li>
+                <li><a href="#s4"> Kontakt </a></li>
+            </ul>
+            <div id="nav-border"></div>
+        </nav>
+
+
         <header>
             <h1> INCO SYSTEM </h1>
             <h2 id="swapper"> - Mature solutions - </h2>
         </header>
     </section>
 
-    <section id="s2" class="center">
-<!--        <div class="straight_border"> </div>-->
-        <h2 class="section_container"> Zakres działaności </h2>
 
+
+    <section id="s2" class="center">
+        <h1> O nas</h1>
+        <div>"OBRAZEK"</div>
+        <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
     </section>
 
-    <section id="s3" class="center">
-        <div class="diagonal_border reverse"> </div>
-        <h2 id=referencje" class="section_container secondary white"> Referencje </h2>
 
+
+    <section id="s3" class="secondary-section">
+        <div class="diagonal_border reverse"> </div>
+        <h1 id=referencje" > Realizacje </h1>
+        <div class="container">
+            <div id="r1"></div>
+            <div id="r2">
+                <div id="r3"></div>
+                <div id="r4"></div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </section>
+
+    <section id="s4" class="secondary-section">
+        <h1> Kontakt </h1>
     </section>
 </div>
 

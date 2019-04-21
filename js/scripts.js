@@ -25,7 +25,7 @@ $(document).ready(function () {
     var scrollTime = 200;
     var currentPosition = $(document).scrollTop;
 
-    $('nav[href="#s1"]').on('click', function (e) {
+    $('a[href="#s1"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
@@ -33,7 +33,7 @@ $(document).ready(function () {
     }, scrollTime, 'linear');
     });
 
-    $('nav[href="#s2"]').on('click', function (e) {
+    $('a[href="#s2"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
@@ -41,7 +41,7 @@ $(document).ready(function () {
     }, scrollTime, 'linear');
     });
 
-    $('nav[href="#s3"]').on('click', function (e) {
+    $('a[href="#s3"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
@@ -49,7 +49,7 @@ $(document).ready(function () {
     }, scrollTime, 'linear');
     });
 
-    $('nav[href="#s4"]').on('click', function (e) {
+    $('a[href="#s4"]').on('click', function (e) {
     e.preventDefault();
 
     $('html, body').animate({
@@ -62,13 +62,17 @@ $(document).ready(function () {
 // DOCKING NAVBAR
     $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    var popup_height = $('#s2').offset().top;
+    var popup_height = $('#s2').offset().top - 1;
 
-    if (scroll >= popup_height) {
-        $("#navbar").removeClass('white').addClass("docked");
-    }
+    // if lower
     if (scroll < popup_height) {
-        $("#navbar").removeClass("docked").addClass('white');
+        $("#navbar").removeClass("docked");
+        $('#nav-border').css('height', '0px');
+    }
+    // if higher
+    if (scroll >= popup_height) {
+        $("#navbar").addClass("docked");
+        $('#nav-border').css('height', '3px');
     }
     });
 
@@ -118,5 +122,19 @@ $(document).ready(function () {
       //      $('nav #s4').removeClass('nav-active')
       //  }
     });
+// MOBILE BURGER NAV
+    $('#burger-icon').on('click', () => {
+        if ($('#menu').css('display') == 'block' ){
+            $('#menu').css({
+                'display':'none'
+            })
+        }else{
+            $('#menu').css({
+                'display':'block'
+
+            })
+        }
+    });
 
 });
+
