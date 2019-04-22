@@ -192,4 +192,10 @@ section .reverse {
   #s2 div {
     width: 90%;
   }
+  .container #r1,
+  .container #r2,
+  .container #r3,
+  .container #r4 {
+    max-width: 200px;
+  }
 }
