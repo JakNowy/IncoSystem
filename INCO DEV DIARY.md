@@ -8,3 +8,7 @@ Version 1.1 [21.04.2019]
 - Homepage sections somewhat implemented + responsive
 
 ----------------------------------------------------------
+Version 1.1.1 [22.04.2019]
+
+- responsive burger nav hotfix
+
