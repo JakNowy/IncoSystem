@@ -42,6 +42,9 @@ nav ul {
 nav ul img {
   float: left;
 }
+nav ul li:first-of-type {
+  margin-top: 20px;
+}
 nav ul li {
   display: inline-block;
 }
@@ -57,9 +60,6 @@ nav ul li a {
 nav ul li a:hover {
   color: #97171b;
   border-bottom: #97171b 1px solid;
-}
-nav ul li:first-of-type {
-  margin-top: 10%;
 }
 #nav-border {
   visibility: hidden;
@@ -147,11 +147,14 @@ section .reverse {
   border: 1px black solid;
 }
 #s4 h1 {
-  padding: 50px;
+  padding: 30px 0 100px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #burger {
     display: block;
+  }
+  #nav-border {
+    display: none;
   }
   nav {
     color: #eef0f1;
@@ -164,6 +167,9 @@ section .reverse {
   }
   nav ul img {
     display: none;
+  }
+  nav ul li:first-of-type {
+    margin-top: 10%;
   }
   nav ul li {
     text-align: center;
