@@ -59,11 +59,12 @@ nav ul li a:hover {
   border-bottom: #97171b 1px solid;
 }
 nav ul li:first-of-type {
-  margin-top: 5px;
+  margin-top: 30px;
 }
 #nav-border {
+  visibility: hidden;
   background: linear-gradient(#071a24, #eef0f1);
-  height: 0;
+  height: 3px;
 }
 .menu {
   display: none;
@@ -131,7 +132,7 @@ section .reverse {
 }
 #s3 .container #r1,
 #s3 .container #r2 {
-  background-color: #eef0f1;
+  background-color: #071a24;
   float: left;
   height: 400px;
   width: 550px;
@@ -145,7 +146,7 @@ section .reverse {
   width: 100%;
   border: 1px black solid;
 }
-#s4 {
+#s4 h1 {
   padding: 50px;
 }
 @media only screen and (max-width: 600px) {
@@ -155,7 +156,7 @@ section .reverse {
   nav {
     color: #eef0f1;
     background-color: #071a24;
-    opacity: 0.8;
+    opacity: 0.95;
   }
   nav ul {
     display: block;

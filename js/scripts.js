@@ -67,12 +67,12 @@ $(document).ready(function () {
     // if lower
     if (scroll < popup_height) {
         $("#navbar").removeClass("docked");
-        $('#nav-border').css('height', '0px');
+        $('#nav-border').css('visibility', 'hidden');
     }
     // if higher
     if (scroll >= popup_height) {
         $("#navbar").addClass("docked");
-        $('#nav-border').css('height', '3px');
+        $('#nav-border').css('visibility', 'visible');
     }
     });
 
