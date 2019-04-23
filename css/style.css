@@ -35,9 +35,19 @@ nav {
   float: right;
 }
 nav ul {
-  font-size: 0;
   padding: 0 5% 1%;
   text-align: right;
+}
+nav ul ul {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  border-bottom: #eef0f1 1px solid;
+}
+nav ul ul li {
+  color: #eef0f1;
+  display: block;
 }
 nav ul img {
   float: left;
@@ -64,21 +74,23 @@ nav ul li a:hover {
 #nav-border {
   visibility: hidden;
   background: linear-gradient(#071a24, #eef0f1);
-  height: 3px;
+  height: 5px;
 }
 .menu {
   display: none;
 }
 .docked {
-  opacity: 0.9;
-  background: #071a24;
+  background: #eef0f1;
   position: fixed;
   right: 0;
   top: 0;
 }
+.docked ul li a {
+  color: #071a24;
+}
 #burger-icon {
   float: right;
-  color: #eef0f1;
+  color: #071a24;
   width: 30px;
   margin: 0 40px 0 0;
   font-size: 30px;
@@ -159,7 +171,7 @@ section .reverse {
   nav {
     color: #eef0f1;
     background-color: #071a24;
-    opacity: 0.95;
+    opacity: 0.85;
   }
   nav ul {
     display: block;
@@ -182,7 +194,7 @@ section .reverse {
     padding: 0;
   }
   nav ul li a:hover {
-    border: none;
+    border-bottom: none;
   }
   .box-img {
     background-attachment: scroll;
