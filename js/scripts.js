@@ -20,7 +20,6 @@ $(document).ready(function () {
     ,(swapTime-correct+4)*2);
 
 
-
 //  SECTION SCROLLING
     var scrollTime = 200;
     var currentPosition = $(document).scrollTop;
@@ -68,11 +67,13 @@ $(document).ready(function () {
     if (scroll < popup_height) {
         $("#navbar").removeClass("docked");
         $('#nav-border').css('visibility', 'hidden');
+        $('a').addClass('underline')
     }
     // if higher
     if (scroll >= popup_height) {
         $("#navbar").addClass("docked");
         $('#nav-border').css('visibility', 'visible');
+        $('a').removeClass('underline')
     }
     });
 

@@ -35,19 +35,9 @@ nav {
   float: right;
 }
 nav ul {
+  font-size: 0;
   padding: 0 5% 1%;
   text-align: right;
-}
-nav ul ul {
-  font-size: 20px;
-  text-align: center;
-  display: block;
-  padding: 15px;
-  border-bottom: #eef0f1 1px solid;
-}
-nav ul ul li {
-  color: #eef0f1;
-  display: block;
 }
 nav ul img {
   float: left;
@@ -58,6 +48,22 @@ nav ul li:first-of-type {
 nav ul li {
   display: inline-block;
 }
+nav ul li li {
+  display: block;
+  border-bottom: none;
+}
+nav ul li li a {
+  display: block;
+  font-size: 16px;
+  color: #eef0f1;
+  text-decoration: none;
+  padding: 20px 25px 12px;
+  margin: 0;
+  transition: color 0.25s, border-bottom-color 0.3s;
+}
+nav ul li li a:hover {
+  color: #97171b;
+}
 nav ul li a {
   font-size: 16px;
   color: #eef0f1;
@@ -65,15 +71,19 @@ nav ul li a {
   padding: 20px 25px 12px;
   margin: 0;
   transition: color 0.25s, border-bottom-color 0.3s;
-  border-bottom: #eef0f1 1px solid;
 }
 nav ul li a:hover {
   color: #97171b;
+}
+nav ul li .underline {
+  border-bottom: #eef0f1 1px solid;
+}
+nav ul li .underline:hover {
   border-bottom: #97171b 1px solid;
 }
 #nav-border {
   visibility: hidden;
-  background: linear-gradient(#071a24, #eef0f1);
+  background: linear-gradient(#e5e5e5, #eef0f1);
   height: 5px;
 }
 .menu {
@@ -131,32 +141,22 @@ section .reverse {
   border-radius: 5px;
   padding: 8% 0;
 }
-#s3 {
-  border-bottom: #eef0f1 solid 5px;
-}
 #s3 h1 {
   margin: 0;
   padding: 40px 0;
 }
 #s3 .container {
-  padding: 0 5% 5%;
-  float: left;
+  margin: 10%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 5px;
 }
-#s3 .container #r1,
-#s3 .container #r2 {
+#s3 .container div {
   background-color: #071a24;
-  float: left;
-  height: 400px;
-  width: 550px;
-  border: 1px black solid;
-  margin: 10px;
 }
-#s3 .container #r3,
-#s3 .container #r4 {
-  float: top;
-  height: 50%;
+#s3 .container div img {
+  display: block;
   width: 100%;
-  border: 1px black solid;
 }
 #s4 h1 {
   padding: 30px 0 100px;
@@ -210,11 +210,5 @@ section .reverse {
   }
   #s2 div {
     width: 90%;
-  }
-  .container #r1,
-  .container #r2,
-  .container #r3,
-  .container #r4 {
-    max-width: 200px;
   }
 }
