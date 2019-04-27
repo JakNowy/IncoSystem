@@ -68,7 +68,7 @@ $(document).ready(function () {
         $("#navbar").removeClass("docked");
         // $('a').addClass('underline');
         $('#logo').attr(
-            'src',"img/Logo_storna.png"
+            'src',"img/Logo_strona.png"
         )
         $('#burger-icon').css(
             'color', '#eef0f1'
@@ -79,7 +79,7 @@ $(document).ready(function () {
         $("#navbar").addClass("docked");
         // $('a').removeClass('underline');
         $('#logo').attr(
-            'src',"img/Logo_storna_black.png"
+            'src',"img/Logo_strona_black.png"
         )
         $('#burger-icon').css(
             'color', '#071922'
