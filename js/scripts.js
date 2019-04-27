@@ -73,6 +73,10 @@ $(document).ready(function () {
         $('#burger-icon').css(
             'color', '#eef0f1'
         )
+        $('#menu li').css(
+            'border-bottom-color', '#eef0f1'
+        )
+
     }
     // if higher
     if (scroll >= popup_height) {
@@ -83,6 +87,9 @@ $(document).ready(function () {
         )
         $('#burger-icon').css(
             'color', '#071922'
+        )
+        $('#menu li').css(
+            'border-bottom-color', '#071922'
         )
     }
     });

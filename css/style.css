@@ -1,4 +1,8 @@
+html {
+  background-color: #071922;
+}
 body {
+  color: #071922;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,6 +10,10 @@ body {
 #container {
   margin: auto;
   background-color: #eef0f1;
+}
+h4 {
+  font-size: 36px;
+  letter-spacing: 3px;
 }
 .box-img {
   /* 1920x1280 */
@@ -24,11 +32,17 @@ body {
   font-size: 90px;
   color: #eef0f1;
 }
-.box-img h2 {
+.box-img h4 {
   font-size: 32px;
   padding: 1% 0;
   color: #eef0f1;
   display: none;
+}
+.underline {
+  border-bottom: #eef0f1 1px solid;
+}
+.underline:hover {
+  border-bottom: #97171b 1px solid;
 }
 nav {
   padding-bottom: 5px;
@@ -56,7 +70,7 @@ nav ul li li {
   display: block;
   border-bottom: none;
 }
-nav ul li li a {
+nav ul li li h1 {
   display: block;
   font-size: 16px;
   color: #eef0f1;
@@ -67,7 +81,6 @@ nav ul li li a {
 }
 nav ul li li a:hover {
   color: #97171b;
-  border-bottom: #97171b 1px solid;
 }
 nav ul li a {
   font-size: 16px;
@@ -79,12 +92,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #97171b;
-}
-nav ul li .underline {
-  border-bottom: #eef0f1 1px solid;
-}
-nav ul li .underline:hover {
-  border-bottom: #97171b 1px solid;
 }
 #nav-border {
   visibility: hidden;
@@ -131,9 +138,6 @@ section .diagonal_border {
 section .reverse {
   background: linear-gradient(to bottom left, #eef0f1 48%, #071922 52%);
 }
-#s2 {
-  color: #071922;
-}
 #s2 div {
   width: 45%;
   margin: 2%;
@@ -144,6 +148,9 @@ section .reverse {
   border-radius: 5px;
   padding: 8% 0;
 }
+#s3 {
+  border-bottom: #eef0f1 solid 5px;
+}
 #s3 h1 {
   margin: 0;
   padding: 40px 0;
@@ -152,11 +159,12 @@ section .reverse {
   margin: 10%;
   display: grid;
   grid-template-columns: 1200fr 640fr;
-  grid-gap: 4px;
+  grid-gap: 1%;
 }
 #s3 .container div img {
-  padding-bottom: 4px;
+  padding-bottom: 2.7%;
   display: block;
+  height: 47%;
   width: 100%;
 }
 #s4 h1 {
@@ -165,6 +173,9 @@ section .reverse {
 @media only screen and (max-width: 500px) {
   #burger {
     display: block;
+  }
+  .underline {
+    border: none;
   }
   nav {
     padding-bottom: 0;
@@ -191,6 +202,9 @@ section .reverse {
     padding: 15px;
     border-bottom: #eef0f1 1px solid;
   }
+  nav ul li ul {
+    display: none;
+  }
   nav ul li a {
     border: none;
     padding: 0;
@@ -207,7 +221,7 @@ section .reverse {
     margin-top: 260px;
     font-size: 45px;
   }
-  .box-img h2 {
+  .box-img h4 {
     font-size: 18px;
   }
   #s2 div {
