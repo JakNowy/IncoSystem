@@ -9,7 +9,7 @@ $(document).ready(function () {
     var i =0;
 
     var swapTime = 2000;
-    var correct = 0;
+    var correct = 3.9;
 
     $('#swapper').fadeIn(swapTime).fadeOut(swapTime, swap(text, i));
     setInterval(function (){
@@ -17,7 +17,7 @@ $(document).ready(function () {
         if (i==text.length){i=0}
         $('#swapper').fadeIn(swapTime-correct).fadeOut(swapTime-correct, swap(text, i));
         }
-    ,(swapTime-correct+4)*2);
+    ,(swapTime-correct)*2);
 
 
 //  SECTION SCROLLING
@@ -67,13 +67,25 @@ $(document).ready(function () {
     if (scroll < popup_height) {
         $("#navbar").removeClass("docked");
         $('#nav-border').css('visibility', 'hidden');
-        $('a').addClass('underline')
+        $('a').addClass('underline');
+        $('#logo').attr(
+            'src',"img/Logo_storna.png"
+        )
+        $('#burger-icon').css(
+            'color', '#eef0f1'
+        )
     }
     // if higher
     if (scroll >= popup_height) {
         $("#navbar").addClass("docked");
         $('#nav-border').css('visibility', 'visible');
-        $('a').removeClass('underline')
+        $('a').removeClass('underline');
+        $('#logo').attr(
+            'src',"img/Logo_storna_black.png"
+        )
+        $('#burger-icon').css(
+            'color', '#071922'
+        )
     }
     });
 

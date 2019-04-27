@@ -63,6 +63,7 @@ nav ul li li a {
 }
 nav ul li li a:hover {
   color: #97171b;
+  border-bottom: #97171b 1px solid;
 }
 nav ul li a {
   font-size: 16px;
@@ -83,24 +84,22 @@ nav ul li .underline:hover {
 }
 #nav-border {
   visibility: hidden;
-  background: linear-gradient(#e5e5e5, #eef0f1);
+  background: linear-gradient(#727272, #eef0f1);
   height: 5px;
 }
-.menu {
-  display: none;
-}
 .docked {
+  box-shadow: 0 4px 5px #727272;
   background: #eef0f1;
   position: fixed;
   right: 0;
   top: 0;
 }
 .docked ul li a {
-  color: #071a24;
+  color: #071922;
 }
 #burger-icon {
   float: right;
-  color: #071a24;
+  color: #eef0f1;
   width: 30px;
   margin: 0 40px 0 0;
   font-size: 30px;
@@ -113,7 +112,7 @@ nav ul li .underline:hover {
 }
 .secondary-section {
   color: #eef0f1;
-  background-color: #071a24;
+  background-color: #071922;
 }
 section {
   clear: both;
@@ -122,14 +121,14 @@ section {
   margin-right: auto;
 }
 section .diagonal_border {
-  background: linear-gradient(to top right, #eef0f1 48%, #071a24 52%);
+  background: linear-gradient(to top right, #eef0f1 48%, #071922 52%);
   height: 50px;
 }
 section .reverse {
-  background: linear-gradient(to bottom left, #eef0f1 48%, #071a24 52%);
+  background: linear-gradient(to bottom left, #eef0f1 48%, #071922 52%);
 }
 #s2 {
-  color: #071a24;
+  color: #071922;
 }
 #s2 div {
   width: 45%;
@@ -137,7 +136,7 @@ section .reverse {
   float: right;
 }
 #s2 div:first-of-type {
-  border: 1px #071a24 solid;
+  border: 1px #071922 solid;
   border-radius: 5px;
   padding: 8% 0;
 }
@@ -148,13 +147,11 @@ section .reverse {
 #s3 .container {
   margin: 10%;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-gap: 5px;
-}
-#s3 .container div {
-  background-color: #071a24;
+  grid-template-columns: 1200fr 640fr;
+  grid-gap: 4px;
 }
 #s3 .container div img {
+  padding-bottom: 4px;
   display: block;
   width: 100%;
 }
@@ -165,13 +162,16 @@ section .reverse {
   #burger {
     display: block;
   }
-  #nav-border {
-    display: none;
+  #menu {
+    display: block;
   }
   nav {
     color: #eef0f1;
-    background-color: #071a24;
+    background-color: #071922;
     opacity: 0.85;
+  }
+  nav #menu {
+    display: none;
   }
   nav ul {
     display: block;
@@ -181,7 +181,7 @@ section .reverse {
     display: none;
   }
   nav ul li:first-of-type {
-    margin-top: 10%;
+    margin-top: 11%;
   }
   nav ul li {
     text-align: center;
