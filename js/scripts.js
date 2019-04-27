@@ -66,8 +66,7 @@ $(document).ready(function () {
     // if lower
     if (scroll < popup_height) {
         $("#navbar").removeClass("docked");
-        $('#nav-border').css('visibility', 'hidden');
-        $('a').addClass('underline');
+        // $('a').addClass('underline');
         $('#logo').attr(
             'src',"img/Logo_storna.png"
         )
@@ -78,8 +77,7 @@ $(document).ready(function () {
     // if higher
     if (scroll >= popup_height) {
         $("#navbar").addClass("docked");
-        $('#nav-border').css('visibility', 'visible');
-        $('a').removeClass('underline');
+        // $('a').removeClass('underline');
         $('#logo').attr(
             'src',"img/Logo_storna_black.png"
         )

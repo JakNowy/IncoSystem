@@ -31,8 +31,12 @@ body {
   display: none;
 }
 nav {
+  padding-bottom: 5px;
   width: 100%;
   float: right;
+}
+nav #logo {
+  margin: 10px 0 0 5%;
 }
 nav ul {
   font-size: 0;
@@ -162,10 +166,8 @@ section .reverse {
   #burger {
     display: block;
   }
-  #menu {
-    display: block;
-  }
   nav {
+    padding-bottom: 0;
     color: #eef0f1;
     background-color: #071922;
     opacity: 0.85;
