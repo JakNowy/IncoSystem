@@ -11,8 +11,8 @@ body {
   margin: auto;
   background-color: #eef0f1;
 }
-h4 {
-  font-size: 36px;
+h2 {
+  font-size: 28px;
   letter-spacing: 3px;
 }
 .box-img {
@@ -45,6 +45,7 @@ h4 {
   border-bottom: #97171b 1px solid;
 }
 nav {
+  z-index: 100;
   padding-bottom: 5px;
   width: 100%;
   float: right;
@@ -147,6 +148,63 @@ section .reverse {
   border: 1px #071922 solid;
   border-radius: 5px;
   padding: 8% 0;
+}
+#s25 .offer-container {
+  height: 300px;
+}
+#s25 .offer-img {
+  height: 250px;
+  width: 350px;
+  box-shadow: 2px 2px 3px #071922;
+  display: inline-block;
+}
+#s25 .img-left {
+  float: left;
+  margin-left: 5%;
+}
+#s25 .img-right {
+  float: right;
+  margin-right: 5%;
+}
+#s25 .text-left {
+  margin: 3% 10% 3% -10%;
+}
+#s25 .text-right {
+  position: relative;
+  left: 10%;
+  margin: 3% 0;
+}
+#s25 #projektowanie {
+  background-image: url("../img/oferta/Projektowanie1.jpg");
+}
+#s25 #plc {
+  background-image: url("../img/oferta/programowanie-plc.jpg");
+}
+#s25 #szafy {
+  background-image: url("../img/oferta/Prefabrykacja2 (1).jpg");
+}
+#s25 #montaz {
+  background-image: url("../img/oferta/montaz.jpg");
+}
+#s25 #KNX {
+  background-image: url("../img/oferta/KNX.jpg");
+}
+#s25 .offer-text {
+  height: 160px;
+  padding: 10px;
+  background-color: #eef0f1;
+  box-shadow: 1px 1px 5px #071922;
+  border-radius: 5px;
+  display: inline-block;
+  width: 65%;
+}
+#s25 .offer-text h1 {
+  font-size: 14px;
+}
+#s25 .offer-text p {
+  text-align: left;
+  font-size: 12px;
+  margin: 0 5%;
 }
 #s3 {
   border-bottom: #eef0f1 solid 5px;

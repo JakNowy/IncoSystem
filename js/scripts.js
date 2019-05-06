@@ -40,6 +40,14 @@ $(document).ready(function () {
     }, scrollTime, 'linear');
     });
 
+    $('a[href="#s25"]').on('click', function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, scrollTime, 'linear');
+    });
+
     $('a[href="#s3"]').on('click', function (e) {
     e.preventDefault();
 
