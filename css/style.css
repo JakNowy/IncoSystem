@@ -147,17 +147,11 @@ section .reverse {
 #s2 div {
   text-indent: 25px;
   font-size: 14px;
-  width: 45%;
-  margin: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  line-height: 30px;
   float: right;
   text-align: justify;
-}
-.info {
-  padding: 0;
-  background-image: url("../img/info.png");
-  background-repeat: no-repeat;
-  width: 550px;
-  height: 300px;
 }
 #s25 .offer-container {
   height: 300px;
@@ -174,15 +168,15 @@ section .reverse {
 }
 #s25 .img-right {
   float: right;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 #s25 .text-left {
-  margin: 3% 10% 3% -10%;
+  margin: 3% 10% 3% -15%;
 }
 #s25 .text-right {
-  position: relative;
-  left: 10%;
-  margin: 3% 0;
+  float: right;
+  margin: 2.5% 0;
+  margin-right: -10%;
 }
 #s25 #projektowanie {
   background-image: url("../img/oferta/Projektowanie1.jpg");
@@ -206,9 +200,11 @@ section .reverse {
   box-shadow: 1px 1px 5px #071922;
   border-radius: 5px;
   display: inline-block;
-  width: 65%;
+  width: 60%;
 }
 #s25 .offer-text h1 {
+  font-weight: bolder;
+  text-align: center;
   font-size: 14px;
 }
 #s25 .offer-text p {
@@ -219,17 +215,32 @@ section .reverse {
 #s3 {
   border-bottom: #eef0f1 solid 5px;
 }
+#s3 img {
+  height: auto;
+}
 #s3 h1 {
   margin: 0;
   padding: 40px 0;
 }
 #s3 .container {
-  margin: 5% 10% 5%;
+  margin: 5% 10% 0;
   display: grid;
   grid-template-columns: 1200fr 640fr;
   grid-gap: 1%;
 }
 #s3 .container div img {
+  padding-bottom: 2.7%;
+  display: block;
+  height: 47%;
+  width: 100%;
+}
+#s3 .container2 {
+  margin: 0 10% 5%;
+  display: grid;
+  grid-template-columns: 660fr 1016fr;
+  grid-gap: 1%;
+}
+#s3 .container2 div img {
   padding-bottom: 2.7%;
   display: block;
   height: 47%;
@@ -249,7 +260,7 @@ section .reverse {
 .red {
   color: #97171b;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #burger {
     display: block;
   }
@@ -303,7 +314,37 @@ section .reverse {
   .box-img h4 {
     font-size: 18px;
   }
-  #s2 div {
-    width: 90%;
+  #s25 .offer-container {
+    height: auto;
+    margin: auto;
+    padding: auto;
+    display: block;
+  }
+  #s25 .offer-img {
+    width: 320px;
+    box-shadow: 2px 2px 3px #071922;
+    display: block;
+  }
+  #s25 .offer-text {
+    height: auto;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+  #s25 .text-left {
+    float: none;
+  }
+  #s25 .text-right {
+    float: none;
+  }
+  #s25 .img-left {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #s25 .img-right {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
