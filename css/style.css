@@ -17,6 +17,7 @@ h2 {
   padding: 85px 0 10px;
 }
 h5 {
+  position: relative;
   font-size: 28px;
   letter-spacing: 3px;
 }
@@ -126,6 +127,9 @@ nav ul li a:hover {
   text-align: right;
   width: 100%;
   display: none;
+}
+#s1 {
+  height: 650px;
 }
 .secondary-section {
   color: #eef0f1;
@@ -327,9 +331,15 @@ section .reverse {
   }
   #s25 .offer-text {
     height: auto;
+    width: 260px;
     margin: auto;
     margin-top: -50px;
     margin-bottom: 50px;
+    opacity: 0.9;
+    padding: 20px 10px;
+  }
+  #s25 .offer-text p {
+    text-align: justify !important;
   }
   #s25 .text-left {
     float: none;
